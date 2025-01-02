@@ -29,15 +29,13 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
-      // whileInView="animate"
-      ref={ref}
       animate={"animate"}
+      ref={ref}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          My experiences on
+          <br /> Software tools
         </p>
         <hr />
       </motion.div>
@@ -45,68 +43,92 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b> Business.
           </h1>
           <button>WHAT WE DO?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
-          className="box"
+          className="box coding"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Coding Platforms (IDEs)</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I have worked extensively with powerful coding platforms such as
+            Visual Studio Code, which offers an intuitive environment with
+            useful extensions. Additionally, I have experience with IntelliJ IDEA,
+            Netbeans for Java development, and Python projects. These platforms
+            have greatly improved my productivity, efficiency in writing and managing code.
           </p>
-          <button>Go</button>
+          <div>
+          <img src="/visual.png" alt="IDE" width="90" height="90"/>
+          <img src="/inteli.png" alt="IDE" width="100" height="100"/>
+          </div>
         </motion.div>
         <motion.div
-          className="box"
+          className="box programming"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Programming Languages</h2>
+          
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            My coding experience spans multiple languages:
+            Java for building scalable and robust backend systems.
+            Python for a wide range of applications, including automation, data
+            analysis, and AI development.
+            JavaScript for both front-end and back-end development, enabling me
+            to create dynamic and interactive web applications.
           </p>
-          <button>Go</button>
+          <div>
+          <img src="/javas.png" alt="Programming Languages" width="100" height="100" />
+          <img src="/python.png" alt="Programming Languages" width="80" height="80" />
+          </div>
+          <div >
+          <img src="/php.png" alt="Programming Languages" width="100" height="60" />
+          </div>
+
         </motion.div>
         <motion.div
-          className="box"
+          className="box webMobile"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Web and Mobile Development Tools</h2>
+          
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I have worked with several frameworks and tools for both web and mobile
+            development: Android Studio for building mobile applications. React and
+            Angular for creating responsive and dynamic web interfaces. These tools
+            have allowed me to create efficient and user-friendly applications.
           </p>
-          <button>Go</button>
+          <div>
+          <img src="/androids.png" alt="Web and Mobile Development" width="80" height="80" />
+          <img src="/react.png" alt="Web and Mobile Development" width="100" height="100" />
+          <img src="/angular.png" alt="Web and Mobile Development" width="90" height="90" />
+
+          </div>
         </motion.div>
         <motion.div
-          className="box"
+          className="box databases"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Databases</h2>
+          
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I have experience working with MySQL, a reliable and widely used relational
+            database system. MySQL has been essential in managing data and ensuring
+            seamless integration with my web and mobile applications.
           </p>
-          <button>Go</button>
+            <div>
+          <img src="/mysqls.png" alt="Web and Mobile Development" width="80" height="80" />
+          <img src="/mongo.png" alt="Web and Mobile Development" width="80" height="80" />
+          </div>
+
         </motion.div>
       </motion.div>
     </motion.div>
