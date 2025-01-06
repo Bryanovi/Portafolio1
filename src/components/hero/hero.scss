@@ -64,12 +64,13 @@
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 15%;
 
     @include mobile {
       height: 50%;
-      width: 100%;
+      width: 20%;
       top: unset;
+      right: 38%;
       bottom: 0;
     }
 

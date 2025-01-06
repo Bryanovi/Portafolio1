@@ -13,20 +13,21 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Develop Bryan
+          <div>
+          👾 Create Dream and Execute it 🚀 <br />
+          
+          </div>
+          
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a href="https://www.facebook.com/bryan.oviedosanchez" target="_blank" rel="noopener noreferrer">
+            <img src="/facebook.png" alt="Facebook" />
           </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
+          <a href="https://www.linkedin.com/in/bryan-oviedo-323795152/" target="_blank" rel="noopener noreferrer">
+            <img src="/linked2.png" alt="LinkedIn" />
           </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
+          <a href="https://github.com/Bryanovi/" target="_blank" rel="noopener noreferrer">
+            <img src="/github4.png" alt="GitHub" />
           </a>
         </div>
       </div>

@@ -53,4 +53,19 @@
     position: absolute;
     z-index: 1;
   }
+
+  .sun1 {
+    background-image: url("/m4.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+
+    @include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
 }
