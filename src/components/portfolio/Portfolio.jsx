@@ -68,6 +68,13 @@ const items = [
   }
 ];
 
+const certificates = [
+  { id: 1, img: "/HATUN.png" },
+  { id: 2, img: "/JAVA1.png" },
+  { id: 3, img: "/JAVA2.png" },
+  { id: 4, img: "/RED.png" }
+];
+
 
 const Single = ({ item }) => {
   const ref = useRef();
@@ -110,6 +117,22 @@ const Single = ({ item }) => {
   );
 };
 
+const CertificatesSection = () => {
+  return (
+    <section className="certificates">
+      <h2>My Certifications</h2>
+      <div className="certificatesContainer">
+        {certificates.map((certificate) => (
+          <div key={certificate.id} className="certificateItem">
+            <img src={certificate.img} alt={`Certificate ${certificate.id}`} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+
 
 const Portfolio = () => {
   const ref = useRef();
@@ -133,6 +156,7 @@ const Portfolio = () => {
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}
+      <CertificatesSection />
     </div>
   );
 };
