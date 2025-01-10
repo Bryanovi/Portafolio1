@@ -158,3 +158,36 @@
     }
   }
 }
+
+.certificatesBackground {
+  background-image: url("/mountains.png"), url("/stars.png"); /* Estrellas primero, luego montañas */
+  background-size: cover, cover; /* Ambas imágenes cubren todo el área */
+  background-position: center, center; /* Ambas imágenes se centran */
+  background-attachment: fixed; /* Fija ambas imágenes mientras se hace scroll */
+  padding: 50px 20px;
+  border-radius: 10px;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  height: 100vh; /* Asegura que ocupe toda la altura visible de la pantalla */
+}
+
+.certificates h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.certificatesContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.certificateItem img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+

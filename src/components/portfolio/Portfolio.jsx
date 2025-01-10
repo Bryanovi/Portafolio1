@@ -120,17 +120,20 @@ const Single = ({ item }) => {
 const CertificatesSection = () => {
   return (
     <section className="certificates">
-      <h2>My Certifications</h2>
-      <div className="certificatesContainer">
-        {certificates.map((certificate) => (
-          <div key={certificate.id} className="certificateItem">
-            <img src={certificate.img} alt={`Certificate ${certificate.id}`} />
-          </div>
-        ))}
+      <div className="certificatesBackground">
+        <h2>My Certifications</h2>
+        <div className="certificatesContainer">
+          {certificates.map((certificate) => (
+            <div key={certificate.id} className="certificateItem">
+              <img src={certificate.img} alt={`Certificate ${certificate.id}`} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
+
 
 
 
